@@ -34,7 +34,10 @@ git commit -m "Release $tag package"
 
 tag_exists=$(git ls-remote --tags origin | grep $tag)
 
-echo $tag_exists
 
-#git tag -fa $tag -m "Release $tag package"
-#git push origin main --tags
+if ! ([ -z "$tag_exists" ]); then
+  git tag -d $tag
+fi
+
+git tag -fa $tag -m "Release $tag package"
+git push origin main --tags
