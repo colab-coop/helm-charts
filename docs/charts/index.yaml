@@ -2,11 +2,11 @@ apiVersion: v1
 entries:
   http-server:
   - apiVersion: v2
-    created: "2022-02-10T19:28:14.46593+01:00"
-    digest: e42d8feec6f744a39b6aa69667bd4f4b64f305123b38a595347804caa24099a3
+    created: "2022-02-10T19:30:00.863807+01:00"
+    digest: 769e39e6a1899ad8cb7320f39fc8a70d74ba51b42a64e4f4e4679731858f7f9b
     name: http-server
     type: application
     urls:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.1.tgz
     version: 0.0.1
-generated: "2022-02-10T19:28:14.465492+01:00"
+generated: "2022-02-10T19:30:00.862834+01:00"
