@@ -29,15 +29,13 @@ fi
 mv $chart $repo
 helm repo index $repo --url https://colab-coop.github.io/helm-charts/charts/
 
-git add -A $repo
-git commit -m "Release $tag package"
-
 tag_exists=$(git ls-remote --tags origin | grep $tag)
-
 
 if ! ([ -z "$tag_exists" ]); then
   git push --delete origin $tag
 fi
 
+git add -A $repo
+git commit -m "Release $tag package"
 git tag -fa $tag -m "Release $tag package"
 git push origin main --tags
