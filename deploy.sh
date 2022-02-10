@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 chart_dir=$1
 dir=$(git rev-parse --show-toplevel)/$chart_dir
 
