@@ -3,6 +3,12 @@
 set -ex
 
 dir=$1
+
+if ! ([ -z "$dir" ]); then
+  echo "Please specify whihch chart to deploy"
+  exit 1
+fi
+
 chart=$(find . -name "$dir-*.tgz" | sed "s|^\./||")
 git_tag=${chart%.tgz}
 
