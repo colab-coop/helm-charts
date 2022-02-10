@@ -31,5 +31,5 @@ helm repo index $repo --url https://colab-coop.github.io/helm-charts/charts/
 
 git add -A $repo
 git commit -m "Release $tag package"
-git tag -fa $tag
+git tag -fa $tag -m "Release $tag package"
 git push origin main --tags
