@@ -1,0 +1,114 @@
+apiVersion: v1
+entries:
+  basic-http-server:
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.0485+01:00"
+    description: A simple helm chart for deploying http apps to coopernetes. To make
+      it publicly routable, set the host value. To add a persistent volume, set the
+      disk value.
+    digest: b4e6f8260dbe46aab61919b2d0ac2b275a72a642e09fbb3bc18d8b15edb52732
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.4.1.tgz
+    version: 0.4.1
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.047916+01:00"
+    description: A simple helm chart for deploying http apps to coopernetes. To make
+      it publicly routable, set the host value. To add a persistent volume, set the
+      disk value.
+    digest: 71340cc9aa37d87e3bbfa5ee9d57018f7148686a74eca78759f84b2d2cd5b76c
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.047341+01:00"
+    description: A simple helm chart for deploying http apps to coopernetes. To make
+      it publicly routable, set the host value. To add a persistent volume, set the
+      disk value.
+    digest: 2e3909d7570a064a4951e2b68e9b40d8ccda4c5068cfe2b6c0ec4d8a76a82639
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.046726+01:00"
+    description: A simple helm chart for deploying http apps to coopernetes. To make
+      it publicly routable, set the host value. To add a persistent volume, set the
+      disk value.
+    digest: 815cde1b38f1556742a605abc7d6591b3d8b6ff0c01df1b1ff15263cef9311eb
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.046027+01:00"
+    description: A simple helm chart for deploying http apps to coopernetes. To make
+      it publicly routable, set the host value. To add a persistent volume, set the
+      disk value.
+    digest: d57c989d2134722b543fd97c7301691059559374e2a3fcf855de782be18922ae
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.045501+01:00"
+    description: A simple helm chart for deploying http apps to coopernetes. To make
+      it publicly routable, set the host value. To add a persistent volume, set the
+      disk value.
+    digest: 1ec0417624f52c43947d102c96023d1837faca59c9abe14f6609a3fa6bfd6f0e
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.044877+01:00"
+    description: A simple helm chart for deploying http apps to coopernetes. To make
+      it publicly routable, set the host value. To add a persistent volume, set the
+      disk value.
+    digest: b6ece42eb204132a4e3c2c4087eed6b15951736665a54d8c9c89fa42a38eba26
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.044229+01:00"
+    description: A simple helm chart for deploying simple http apps to coopernetes.
+      This chart assumes you have a docker container you want to build, you want it
+      publicly accessible, and that you don't need any volumes or storage attached.
+    digest: 0ec00bc7078ec7b94839d82da078c20ed76668b98e50008212d1c7040690e82e
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.043525+01:00"
+    description: A simple helm chart for deploying simple http apps to coopernetes.
+      This chart assumes you have a docker container you want to build, you want it
+      publicly accessible, and that you don't need any volumes or storage attached.
+    digest: bea0a9d30b57eaf1efdd4c9b228e8b22a788af4c7f56397b1d98373017aa6316
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    created: "2022-02-10T18:06:07.041602+01:00"
+    description: A simple helm chart for deploying simple http apps to coopernetes.
+      This chart assumes you have a docker container you want to build, you want it
+      publicly accessible, and that you don't need any volumes or storage attached.
+    digest: d20b70e08f09460cad8431a03647ebc0c1c79069a38b29703a2698961e73bcae
+    name: basic-http-server
+    type: application
+    urls:
+    - https://github.com/colab-coop/helm-charts/basic-http-server-0.1.2.tgz
+    version: 0.1.2
+generated: "2022-02-10T18:06:07.040116+01:00"

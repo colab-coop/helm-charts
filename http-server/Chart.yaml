@@ -1,0 +1,4 @@
+apiVersion: v2
+name: basic-http-server
+type: application
+version: 0.4.1
