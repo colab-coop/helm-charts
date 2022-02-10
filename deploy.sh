@@ -5,7 +5,7 @@ set -ex
 chart_dir=$1
 dir=$(git rev-parse --show-toplevel)/$chart_dir
 
-if ([ -z "$chart_dir" ]); then
+if [ -z "$chart_dir" ]; then
   echo "Please specify whihch chart to deploy"
   exit 1
 fi
@@ -31,12 +31,13 @@ helm repo index $repo --url https://colab-coop.github.io/helm-charts/charts/
 
 tag_exists=$(git ls-remote --tags origin | grep $tag)
 
-if ! ([ -z "$tag_exists" ]); then
-  echo "Deleting existing tag"
+if ! [ -z "$tag_exists" ]; then
+  echo "Deleting existing tag: $tag"
   git tag -d $tag
   git push --delete origin $tag
 fi
 
+echo "Releasing tag: $tag"
 git add -A $repo
 git commit -m "Release $tag package"
 git tag -fa $tag -m "Release $tag package"
