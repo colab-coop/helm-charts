@@ -2,9 +2,10 @@
 
 set -ex
 
-dir=$1
+chart_dir=$1
+dir=$(git rev-parse --show-toplevel)/$chart_dir
 
-if ! ([ -z "$dir" ]); then
+if ([ -z "$chart_dir" ]); then
   echo "Please specify whihch chart to deploy"
   exit 1
 fi
