@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-set -ex
+set -e
 
 chart_dir=$1
 dir=$(git rev-parse --show-toplevel)/$chart_dir
@@ -11,6 +11,7 @@ if [ -z "$chart_dir" ]; then
 fi
 
 if ! (output=$(git status --porcelain) && [ -z "$output" ]); then
+  echo "Pushing release candidate changes"
   git add .
   git commit -m "Release candidate"
   git push origin main
@@ -23,6 +24,7 @@ repo=$(git rev-parse --show-toplevel)/docs/charts/
 tag=${chart%.tgz}
 
 if test -f "$repo$chart"; then
+  echo "Deleting existing release"
   rm -rf $repo$chart
 fi
 
