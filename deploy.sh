@@ -10,22 +10,26 @@ if ([ -z "$chart_dir" ]); then
   exit 1
 fi
 
-chart=$(find . -name "$dir-*.tgz" | sed "s|^\./||")
-git_tag=${chart%.tgz}
-
 if ! (output=$(git status --porcelain) && [ -z "$output" ]); then
   git add .
-  git commit -m "Release $git_tag changes"
+  git commit -m "Release candidate"
   git push origin main
 fi
 
-repo=$(git rev-parse --show-toplevel)/docs/charts/
+helm package $chart_dir
 
-helm package $dir
+chart=$(find .  -maxdepth 1 -name "$chart_dir-*.tgz" | sed "s|^\./||")
+repo=$(git rev-parse --show-toplevel)/docs/charts/
+tag=${chart%.tgz}
+
+if test -f "$repo$chart"; then
+  rm -rf $repo$chart
+fi
+
 mv $chart $repo
 helm repo index $repo --url https://colab-coop.github.io/helm-charts/charts/
 
 git add -A $repo
-git commit -m "Release $git_tag package"
-git tag $git_tag
+git commit -m "Release $tag package"
+git tag $tag
 git push origin main --tags
