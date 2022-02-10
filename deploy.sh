@@ -32,6 +32,8 @@ helm repo index $repo --url https://colab-coop.github.io/helm-charts/charts/
 tag_exists=$(git ls-remote --tags origin | grep $tag)
 
 if ! ([ -z "$tag_exists" ]); then
+  echo "Deleting existing tag"
+  git tag -d $tag
   git push --delete origin $tag
 fi
 
