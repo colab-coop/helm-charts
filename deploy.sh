@@ -36,8 +36,7 @@ tag_exists=$(git ls-remote --tags origin | grep $tag)
 
 
 if ! ([ -z "$tag_exists" ]); then
-  git tag -d $tag
-  git push origin main --tags
+  git push --delete origin $tag
 fi
 
 git tag -fa $tag -m "Release $tag package"
