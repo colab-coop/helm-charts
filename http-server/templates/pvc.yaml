@@ -5,6 +5,7 @@ metadata:
   name: {{ .Release.Name }}-data
   labels:
     app: {{ .Release.Name }}
+    velero.io/csi-volumesnapshot-class: "true"
 spec:
   accessModes:
     - ReadWriteOnce
