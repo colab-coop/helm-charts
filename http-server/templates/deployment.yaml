@@ -18,11 +18,11 @@ spec:
         imagePullPolicy: Always
         ports:
           - containerPort: {{ .Values.image.port }}
-        {{- with .Values.image.env}}
+        {{- if .Values.env }}
         env:
-          {{- range $env := .}}
-          - name: {{ $env.name }}
-            value: {{ $env.value | quote }}
+          {{- range $key, $value :=  .Values.env }}
+          - name: {{ $key }}
+            value: {{ $value | quote }}
           {{- end }}
         {{- end }}
         {{- if .Values.disk }}

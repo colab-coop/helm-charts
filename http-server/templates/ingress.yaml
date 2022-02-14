@@ -9,16 +9,16 @@ spec:
   tls:
   - hosts:
     {{- range $host := .Values.hosts }}
-    - {{ $host }}
+      - {{ $host }}
     {{- end }}
     secretName: {{ .Release.Name }}-tls
   rules:
   {{- range $host := .Values.hosts }}
-  - host: {{ $host }}
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: {{ $.Release.Name }}
-          servicePort: 80
+    - host: {{ $host }}
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: {{ $.Release.Name }}
+              servicePort: 80
   {{- end }}
