@@ -18,9 +18,9 @@ spec:
         imagePullPolicy: Always
         ports:
           - containerPort: {{ .Values.image.port }}
-        {{- if .Values.env }}
+        {{- if .Values.image.env }}
         env:
-          {{- range $key, $value :=  .Values.env }}
+          {{- range $key, $value :=  .Values.image.env }}
           - name: {{ $key }}
             value: {{ $value | quote }}
           {{- end }}
