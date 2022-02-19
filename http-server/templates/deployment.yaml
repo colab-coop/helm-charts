@@ -11,13 +11,6 @@ spec:
     metadata:
       labels:
         app: {{ .Release.Name }}
-      {{- if .Values.backup }}
-      {{- if .Values.disk }}
-      annotations:
-        pre.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--freeze", "{{ .Values.disk.mountPath }}"]'
-        post.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--unfreeze", "{{ .Values.disk.mountPath }}"]'
-      {{- end }}
-      {{- end }}
     spec:
       containers:
       - name: {{ .Release.Name }}
