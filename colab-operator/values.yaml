@@ -1,5 +1,5 @@
 image:
-  tag: colabcoop/operator:0.0.2
+  tag: colabcoop/operator:0.0.3
   env:
     CLUSTER: "CoLab Kube"
     NODEPING: false
