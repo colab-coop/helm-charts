@@ -13,42 +13,42 @@ spec:
         app: {{ .Release.Name }}
     spec:
       containers:
-      - name: {{ .Release.Name }}
-        image: {{ .Values.image.tag }}
-        imagePullPolicy: Always
-        ports:
-          - containerPort: {{ .Values.image.port }}
-        {{- if .Values.image.env }}
-        env:
-          {{- range $key, $value :=  .Values.image.env }}
-          - name: {{ $key }}
-            value: {{ $value | quote }}
+        - name: {{ .Release.Name }}
+          image: {{ .Values.image.tag }}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: {{ .Values.image.port }}
+          {{- if .Values.image.env }}
+          env:
+            {{- range $key, $value :=  .Values.image.env }}
+            - name: {{ $key }}
+              value: {{ $value | quote }}
+            {{- end }}
           {{- end }}
-        {{- end }}
+          {{- if .Values.disk }}
+          volumeMounts:
+            - name: {{ .Release.Name }}-data
+              mountPath: {{ .Values.disk.mountPath }}
+          {{- end }}
+          readinessProbe:
+            httpGet:
+              path: /
+              port: {{ .Values.image.port }}
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /
+              port: {{ .Values.image.port }}
+            initialDelaySeconds: 15
+            periodSeconds: 30
+          startupProbe:
+            httpGet:
+              path: /
+              port: {{ .Values.image.port }}
+            failureThreshold: 30
+            periodSeconds: 60
         {{- if .Values.disk }}
-        volumeMounts:
-          - name: {{ .Release.Name }}-data
-            mountPath: {{ .Values.disk.mountPath }}
-        {{- end }}
-        readinessProbe:
-          httpGet:
-            path: /
-            port: {{ .Values.image.port }}
-          initialDelaySeconds: 5
-          periodSeconds: 10
-        livenessProbe:
-          httpGet:
-            path: /
-            port: {{ .Values.image.port }}
-          initialDelaySeconds: 15
-          periodSeconds: 30
-        startupProbe:
-          httpGet:
-            path: /
-            port: {{ .Values.image.port }}
-          failureThreshold: 30
-          periodSeconds: 60
-      {{- if .Values.disk }}
       volumes:
         - name: {{ .Release.Name }}-data
           persistentVolumeClaim:
