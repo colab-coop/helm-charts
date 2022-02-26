@@ -12,7 +12,7 @@ spec:
       labels:
         app: {{ .Release.Name }}
     spec:
-      serviceAccountName: colab-operator-sa
+      serviceAccountName: {{ .Release.Name }}-sa
       automountServiceAccountToken: true
       containers:
         - name: {{ .Release.Name }}
