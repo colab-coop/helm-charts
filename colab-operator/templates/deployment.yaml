@@ -12,6 +12,8 @@ spec:
       labels:
         app: {{ .Release.Name }}
     spec:
+      serviceAccountName: colab-operator-sa
+      automountServiceAccountToken: true
       containers:
         - name: {{ .Release.Name }}
           image: {{ .Values.image.tag }}
