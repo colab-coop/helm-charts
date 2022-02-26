@@ -1,9 +1,13 @@
 image:
-  tag: colabcoop/operator:0.0.4
+  tag: colabcoop/operator:0.0.5
   env:
     CLUSTER: "CoLab Kube"
+    SLACK: false
+    SLACK_APIKEY: "[SLACK_APIKEY]"
+    SLACK_USERNAME: "CoLab Kube"
+    SLACK_CHANNEL: "#colab-kube"
     NODEPING: false
-    NODEPING_TOKEN: "[NODEPING_TOKEN]"
+    NODEPING_APIKEY: "[NODEPING_APIKEY]"
     NODEPING_GROUP: "DevOps"
     NODEPING_METHOD: "GET"
     NODEPING_ACCEPT_HEADER: "text/html"
@@ -14,10 +18,6 @@ image:
     NODEPING_INTERVAL: 1
     NODEPING_THRESHOLD: 20
     NODEPING_STATUSCODE: 200
-    SLACK: false
-    SLACK_TOKEN: "[SLACK_TOKEN]"
-    SLACK_USERNAME: "CoLab Kube"
-    SLACK_CHANNEL: "#colab-kube"
 
 imageCredentials:
   registry: https://index.docker.io/v1/
