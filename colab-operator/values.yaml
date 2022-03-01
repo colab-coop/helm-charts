@@ -1,5 +1,5 @@
 image:
-  tag: colabcoop/operator:0.0.9
+  tag: colabcoop/operator:0.0.10
   env:
     CLUSTER: "[CLUSTER_NAME]"
     SLACK: false
