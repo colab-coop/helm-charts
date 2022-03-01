@@ -1,14 +1,14 @@
 image:
-  tag: colabcoop/operator:0.0.6
+  tag: colabcoop/operator:0.0.7
   env:
-    CLUSTER: "CoLab Kube"
+    CLUSTER: "[CLUSTER_NAME]"
     SLACK: false
     SLACK_APIKEY: "[SLACK_APIKEY]"
-    SLACK_USERNAME: "CoLab Kube"
-    SLACK_CHANNEL: "#colab-kube"
+    SLACK_USERNAME: "[SLACK_USERNAME]"
+    SLACK_CHANNEL: "[SLACK_CHANNEL]"
     NODEPING: false
     NODEPING_APIKEY: "[NODEPING_APIKEY]"
-    NODEPING_GROUP: "DevOps"
+    NODEPING_GROUP: "[NODEPING_ROUP]"
     NODEPING_METHOD: "GET"
     NODEPING_ACCEPT_HEADER: "text/html"
     NODEPING_CONTENT_TYPE: "text/html"
