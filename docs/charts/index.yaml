@@ -2,7 +2,15 @@ apiVersion: v1
 entries:
   colab-operator:
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.183286+01:00"
+    created: "2022-03-01T01:24:17.524556+01:00"
+    digest: 28458312a5d3e4b550d496f92a8d16fc5bde424708f4105f891632291638189f
+    name: colab-operator
+    type: application
+    urls:
+    - https://colab-coop.github.io/helm-charts/charts/colab-operator-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    created: "2022-03-01T01:24:17.524249+01:00"
     digest: 44e68fc7a6b0461e1bf5d5e6ab8c8d8f61e779167920f6a3981d6d2e4d6b65bb
     name: colab-operator
     type: application
@@ -10,7 +18,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/colab-operator-0.0.7.tgz
     version: 0.0.7
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.182893+01:00"
+    created: "2022-03-01T01:24:17.523688+01:00"
     digest: b9757bc868b90d55f2e67d104e22defc60905c6cb646f3bee774d40b84d429c6
     name: colab-operator
     type: application
@@ -18,7 +26,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/colab-operator-0.0.6.tgz
     version: 0.0.6
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.18097+01:00"
+    created: "2022-03-01T01:24:17.523113+01:00"
     digest: a86c0d81cbd4ade548ad41f10238e815059656b59e923996d16403dc394a360e
     name: colab-operator
     type: application
@@ -26,7 +34,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/colab-operator-0.0.5.tgz
     version: 0.0.5
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.179623+01:00"
+    created: "2022-03-01T01:24:17.522531+01:00"
     digest: 74234f5ee59467d0fb7beebb2d680ec68f4fa864a0f1b3fb1e6dd69b850aea2f
     name: colab-operator
     type: application
@@ -34,7 +42,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/colab-operator-0.0.4.tgz
     version: 0.0.4
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.176204+01:00"
+    created: "2022-03-01T01:24:17.518713+01:00"
     digest: 65a4c66d49598563e4a71725d6305eac69b2c60e0366e2d377b559465ede9732
     name: colab-operator
     type: application
@@ -42,7 +50,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/colab-operator-0.0.3.tgz
     version: 0.0.3
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.172606+01:00"
+    created: "2022-03-01T01:24:17.517283+01:00"
     digest: 51fcec273dc9fe609fe706f7b7f646033d55303f3386cfd67d0213927b6cd83e
     name: colab-operator
     type: application
@@ -50,7 +58,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/colab-operator-0.0.2.tgz
     version: 0.0.2
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.170318+01:00"
+    created: "2022-03-01T01:24:17.516269+01:00"
     digest: 6ac264b0591174ceaba3e0cff711b5d6b8e188dcde95770926bafd222e5b94cf
     name: colab-operator
     type: application
@@ -59,7 +67,7 @@ entries:
     version: 0.0.1
   http-server:
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.188362+01:00"
+    created: "2022-03-01T01:24:17.526364+01:00"
     digest: e2500920cd1907ba3dee31b88df3854eed546094b2e5e8b3ab6c7f3fa8392e34
     name: http-server
     type: application
@@ -67,7 +75,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.10.tgz
     version: 0.0.10
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.203352+01:00"
+    created: "2022-03-01T01:24:17.532436+01:00"
     digest: b40f7090d271b155a5c27fb8e80809858f837e0acadc1fd2bb71dd799ffe0aa1
     name: http-server
     type: application
@@ -75,7 +83,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.9.tgz
     version: 0.0.9
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.202256+01:00"
+    created: "2022-03-01T01:24:17.531351+01:00"
     digest: d3fee748cc1b402e426ca4ccaedd00cba3692964f32286843b33ba460c73d42c
     name: http-server
     type: application
@@ -83,7 +91,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.8.tgz
     version: 0.0.8
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.200682+01:00"
+    created: "2022-03-01T01:24:17.530722+01:00"
     digest: fad12eccc53ca14c7df5e9e20981fe03e9d666d540bd91a235a78ec242f7ad18
     name: http-server
     type: application
@@ -91,7 +99,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.7.tgz
     version: 0.0.7
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.19921+01:00"
+    created: "2022-03-01T01:24:17.530028+01:00"
     digest: 59bd5fd9c97febd05207dccfeb0daf3ed09e8b567bdb6f74434b3043ec09e3b1
     name: http-server
     type: application
@@ -99,7 +107,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.6.tgz
     version: 0.0.6
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.197134+01:00"
+    created: "2022-03-01T01:24:17.529501+01:00"
     digest: 65a2180c68e98bfd767b0ad7282923ebbd5b99bdd8571eac08515b5667376bbb
     name: http-server
     type: application
@@ -107,7 +115,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.5.tgz
     version: 0.0.5
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.196082+01:00"
+    created: "2022-03-01T01:24:17.52882+01:00"
     digest: 0a80c6988ed14f8d0f0824c1db4d5fc74d79aed2d6a24db557e5561b7ede35b1
     name: http-server
     type: application
@@ -115,7 +123,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.4.tgz
     version: 0.0.4
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.194386+01:00"
+    created: "2022-03-01T01:24:17.528141+01:00"
     digest: f7edc7c4fc47f70b806ec4dccb285d43922634861305157f50fb707858496a59
     name: http-server
     type: application
@@ -123,7 +131,7 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.3.tgz
     version: 0.0.3
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.193744+01:00"
+    created: "2022-03-01T01:24:17.527182+01:00"
     digest: a907e17075fc8038b4889b514bc2097f642a2a19661308b9c5b4d6fd607254d4
     name: http-server
     type: application
@@ -131,11 +139,11 @@ entries:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.2.tgz
     version: 0.0.2
   - apiVersion: v2
-    created: "2022-02-26T21:10:53.183872+01:00"
+    created: "2022-03-01T01:24:17.525859+01:00"
     digest: 52d481d84ddcb8a9577de25b9e7948191a886bee1e2e34156e593a9734866f2f
     name: http-server
     type: application
     urls:
     - https://colab-coop.github.io/helm-charts/charts/http-server-0.0.1.tgz
     version: 0.0.1
-generated: "2022-02-26T21:10:53.165748+01:00"
+generated: "2022-03-01T01:24:17.513676+01:00"
